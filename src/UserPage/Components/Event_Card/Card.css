@@ -1,54 +1,84 @@
-.events{
-  margin-left: 3vw;
+.events {
+  margin-left: 1vw;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   flex-direction: row;
   flex: 1;
-  max-width: 900px;
 }
 
-.event{
+.event {
   display: flex;
   margin: 3vw;
   width: auto;
-  border-radius: 10%;
-  background:radial-gradient(94.84% 94.84% at 50% 50%, rgba(196, 196, 196, 0.28) 0%, rgba(196, 196, 196, 0.13) 100%);;
+  border-radius: 20px;
+  background: #1c1b1b;
 }
 
-
-.event_wrapper{
-  padding: 1.5vw;
-  font-family: 'Heebo', sans-serif;
+.event_wrapper {
+  /* padding: 1.5vw; */
+  font-family: 'Roboto';
+  /* width: 22vw;
+  height: 421px; */
 }
 
-.event_society{
+.event-img {
+  border-radius: 20px 20px 0 0;
+  height: 40%;
+  width: 100%;
+  object-fit: cover;
+}
+.info {
+  margin: 16px 20px;
+  align-items: center;
+}
+.event_society {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.society_name{
-  font-size: 1.5vw;
-  font-weight: 500;
-}
-
-.event_name, .event_date, .event_time{
-  padding: 10px;
-  font-size: 1.2vw;
-  
-}
-
-.event_register{
-  padding:  0 1vw;
+/* font-family: 'Montserrat', sans-serif; */
+.event_name {
+  font-family: 'Play', sans-serif;
+  font-size: 1rem;
   text-align: center;
-  font-size: 1.2vw;
+}
+.society_name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  text-transform: capitalize;
+}
+.event_date {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  background: #2b2a2a;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+.date {
+  margin: 0;
 }
 
-.event_register button{
-  border-radius: 8px;
-  background-color: black;
-  border-color: black;
-  margin-top: 0.5vw;
-  padding: 0.7vw 1.5vw 0.7vw 1.5vw;
+.event_register {
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  font-size: 1rem;
+}
+
+.event_register button {
+  border-radius: 7px;
+  background-color: #9747ff;
+  border: none;
+  margin: 25px auto;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.register {
+  margin: 0;
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Play&display=swap');
 /* .App {
   text-align: center;
 }
@@ -39,7 +40,9 @@
 } */
 
 /*Society event page app.css */
-
+body {
+  background-color: black;
+}
 .App {
   text-align: center;
 }
@@ -47,19 +50,66 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-  
 }
-
+@media screen and (max-width: 650px){
+  .container-user{
+    display: flex;
+  }
+}
+/*
 .societyPage-background{
   background-image: url("./Society/images/event_pageBackground.jpeg");
   margin-top: -3.4%;
   height:100vh ;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   background-repeat:no-repeat;
   background-attachment:fixed;
+}*/
+/* width */
+body {
+  background: url('background.jpg');
+}
+.mainpage {
+  display: grid;
+}
+.container-user {
+  display: grid;
+  grid-template-columns: 12% 88%;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 1vw;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5vw;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 245, 245, 0.788);
+  border-radius: 5vw;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  border-radius: 5vw;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -90,18 +140,16 @@
   }
 }
 
-.societyPage{
-  margin:0 15% 0 15%;
+/* .societyPage{
+  margin:0 auto 0 auto;
   
 }
 .societyName{
-  margin:50px;
-}
-.societyName h1{
-  color:white;
-  font-size: 4rem;
- text-align: center;
-
+  margin: 0vw;
+    font-size: 6vw;
+    font-variant-caps: all-petite-caps;
+    color: white;
+    text-align: center;
 }
 hr{
   width:20%;
@@ -114,44 +162,21 @@ hr{
   margin: -50px auto 10px; 
 }
 
-
-.addCard {
-  cursor: pointer;
-  margin:20px;
-  width: 220px;
-  height: 320px;
-  border-radius: 12px;
-  background-color:rgb(128,128,128,0.4);
-  padding: 20px;
-  text-align: center;
-  float: left;
+.cards{
+  margin-left: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.addCard img{
-    width: 30%;
-}
-
-.addCard h4{
-  margin-top: 10%;
-  color: white;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1 1;
 }
 .card {
   display: flex;
-  justify-content: space-between;
-  margin: 20px;
-  width: 220px;
-  height: 320px;
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0);
-  padding: 20px;
-  text-align: center;
-  float: left;
-  border: 2px solid white;
-  color:white;
-  font-size: 0.9rem;
+  margin: 3vw;
+  width: auto;
+  border-radius: 20px;
+  background: #1C1B1B;
   
 }
 
@@ -197,110 +222,124 @@ hr{
   border-image: url(./Society/images/event_CardBackground.jpeg) 2% stretch;
   background-color: black;
   color:white;
-}
+} */
 
-.Modal{
+.Modal {
   display: flex;
   flex-direction: column;
-  
   margin: auto;
-  margin-top: 10%;
-  width: 25%;
-  height: 50%;
-  background-image: url('./Society/images/event_CardBackground.jpeg') !important;
-  background-size: cover;
+  margin-top: 4%;
+  width: 30%;
+  background-color: #1c1b1b;
   border-radius: 3%;
-
-
-  
 }
 
-.Modal .modal-header h2{
-  font-size: 2rem;
-  font-weight: 600;
+@media (max-width: 824px) {
+  .Modal {
+    width: 72%;
+  }
+}
+
+.Modal .modal-header h2 {
+  font-size: 1.5rem;
+  font-family: 'Play', sans-serif;
+  color: white;
   margin-bottom: -5px;
 }
 
-.Modal .modal-header{
+.Modal .modal-header {
   border-bottom: 2px #282c34;
 }
 
-.Modal .modal-header .material-icons{
+.Modal .modal-header .modal-close {
   cursor: pointer;
+  padding: 0 5px;
+  border-radius: 5%;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #9747ff;
 }
 
-.Modal .line{
-  height: 0.5px; 
+.Modal .line {
+  height: 0.5px;
   background-color: #25272be8;
   width: 90%;
   margin: auto;
   border-radius: 1px;
 }
 
-
-
-.Modal input::placeholder{
-  font-size: 0.8rem;
-  color: #ffffff;
-}
-.Modal input{
-  
-  font-size: 0.8rem;
+.Modal label {
+  font-family: 'Play', sans-serif;
   color: white;
-  background-color: #282c34;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
-.Modal .modal-body .field-rows{
+.Modal .big-ip {
+  background: #f8f7f7;
+  font-weight: 900;
+  margin-bottom: 10px;
+  border-radius: 10%;
+}
+
+.Modal input::placeholder {
+  font-size: 0.7rem;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+.Modal .modal-body .field-rows {
   display: flex;
   flex-direction: column;
 }
 
-.Modal .modal-body .field-rows .field-colums{
+.Modal .modal-body .field-rows .field-colums {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5%;
 }
 
-.Modal .modal-body .field-rows .fields{
+.Modal .modal-body .field-rows .fields {
   display: flex;
   justify-content: space-between;
 }
 
-.Modal .modal-body .field-rows .small-ip input{
-  padding: 6%;
+.Modal .modal-body .field-rows .small-ip input {
+  padding: 2%;
   width: 98%;
   border: 2px transparent;
   border-radius: 4px;
-
 }
 
-.Modal .modal-body .field-rows .big-ip input{
-  padding: 3%;
+.Modal .modal-body .field-rows .big-ip input {
+  padding: 2%;
   width: 100%;
   border: 2px transparent;
   border-radius: 4px;
-
+}
+.date,
+.time {
+  width: 40%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
 }
 
-
-
-.Modal .modal-btn{
+.Modal .modal-btn {
   display: flex;
   justify-content: center;
   width: 100%;
-  
 }
 
-.Modal .modal-btn button{
+.Modal .modal-btn button {
   margin-top: 8%;
-  background-color: #282c34;
-  width: 90%;
+  background-color: #9747ff;
+  font-family: 'Play', sans-serif;
+  width: 40%;
   color: #ffffff;
   border: 2px none;
-  padding: 2%;
+  padding: 2% 8%;
   border-radius: 5px;
 }
 
-.Modal label{
-  font-weight: 500;
+a:visited {
+  color: white !important;
 }

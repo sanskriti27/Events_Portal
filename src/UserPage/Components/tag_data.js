@@ -1,0 +1,15 @@
+export const colourOptions = [
+  { value: "tech", label: "Technical" },
+  { value: "non-tech", label: "Non-Technical" },
+  { value: "coding", label: "Coding" },
+  { value: "hackathon", label: "Hackathon" },
+  { value: "hands-on", label: "Hands-On" },
+  { value: "speaker", label: "Speaker" },
+  { value: "conference", label: "Conference" },
+  { value: "dance", label: "Dance" },
+  { value: "music", label: "Music" },
+  { value: "fashion", label: "Fashion" },
+  { value: "art", label: "Art" },
+  { value: "sports", label: "Sports" },
+  { value: "comp", label: "Competetion" },
+];

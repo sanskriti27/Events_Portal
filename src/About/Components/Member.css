@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Play&display=swap');
+
+.team_about {
+   margin: 7vh 0;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+.team_Header{
+   height: 55px;
+   font-family: 'Play', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 48px;
+   line-height: 55px;
+   color: #FFFFFF;
+}
+
+.mem_card {
+   perspective: 1000px;
+}
+
+.card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+}
+
+.mem_card:hover .card-inner {
+   transform: rotateY(180deg);
+}
+
+.mem_content, .flip {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden; 
+   backface-visibility: hidden;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.container .mem_card {
+   width: 18vw;
+    height: 20vw;
+   padding: 0px 0px;
+   margin: 20px 10px;
+   /* border-radius: 10px; */
+   position: relative;
+}
+
+.container .mem_card .content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.imgbox {
+   width: 100%;
+   height: 100%;
+   border-radius: 0px;
+   border: none;
+   position: relative;
+}
+
+.imgbox img {
+   position: absolute;
+   top: 0;
+   border-radius: 10px;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.detail h4 {
+   text-align: center;
+   letter-spacing: -0.01em;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: bolder;
+   font-size: 1.6vw;
+   line-height: 20px;  
+   color: #FFFFFF;
+   padding-right: 1vw;
+   padding-left: 1vw;
+   margin-bottom: 1vw;
+}
+
+.detail h5 {
+
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-size: 1.4vw;
+   text-align: center;
+   letter-spacing: -0.02em;
+   font-weight: bolder;
+   margin-bottom: 1vw;
+   color: black;
+}
+
+.detail-para {
+
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1.2vw;
+   line-height: 1rem;
+   margin: 0vw 1vw 0.6vw 1vw;
+   text-align: center;
+   color: #FFFFFF;
+}
+
+.flip {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   transform: rotateY(180deg);
+   background-color: #9747FF;
+   border-radius: 10px;
+   padding: 0 10px;
+}
+
+#member_icons_list{
+   display: flex;
+   list-style: none;
+   justify-content: space-evenly;
+   margin: 0vw;
+   padding-left: 0vw;
+}
+.member_icon{
+   font-size: 2.2vw;
+   color: white;
+}
+.detail{
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 650px) {
+
+   .member_icon{
+      font-size: 8vw;
+      color: white;
+   }
+   .container .mem_card {
+      width: 60vw;
+       height: 60vw;
+       z-index: -1;
+   }
+   .detail-para {
+
+      font-size: 4vw;
+   }
+
+   .detail h4 {
+
+      font-size: 4.4vw;
+      margin-bottom: 2vw;
+   }
+   .detail h5 {
+
+      font-size: 4.1vw;
+   }
+}
